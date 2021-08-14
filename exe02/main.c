@@ -3,7 +3,7 @@
 
 int main() {
 
-    int a, b, s;
+	int vetor[10];
   
   // ENTRADA DE DADOS
   scanf("%d %d", &a, &b);
