@@ -11,7 +11,7 @@ void vetor_preenche(int n, int vetor[n])
 int vetor_exibe_menor(int n, int vetor[n]){
     int menor = vetor[0];
     
-	for(i = 0; i < n; i++)
+	for(int i = 0; i < n; i++)
         if(vetor[i] < menor)
             menor = vetor[i];
 
