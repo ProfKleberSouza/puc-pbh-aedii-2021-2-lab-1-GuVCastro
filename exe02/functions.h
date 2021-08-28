@@ -1,2 +1,2 @@
-
-int somar(int n1, int n2);
+int vetor_preenche(int n, int vetor[n]);
+int vetor_exibe_menor(int n, int vetor[n]); 

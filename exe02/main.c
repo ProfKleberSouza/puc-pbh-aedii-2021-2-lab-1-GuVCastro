@@ -3,16 +3,17 @@
 
 int main() {
 
-	int vetor[10];
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+	int vetor[50], n, menor_elemento;
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+	printf("Insira a quantidade de elementos do vetor");
+	scanf("%d", &n);
+	
+	if (n > 0) { 
+		vetor_preenche(n, vetor);
+		menor_elemento = vetor_exibe_menor(n, vetor); 
+		printf("MENOR = %d", menor_elemento);
+	} else
+		printf("ENTRADA INVALIDA"); 
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+	return(0);
 }
