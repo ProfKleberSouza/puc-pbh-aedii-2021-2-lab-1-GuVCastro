@@ -3,16 +3,15 @@
 
 int main() {
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+	int vetor[50], n, menor_elemento, maior_elemento;
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+	scanf("%d", &n);	
+	if (n > 0) { 
+		vetor_preenche(n, vetor);
+		vetor_exibe_valores(n, vetor, &menor_elemento, &maior_elemento);  
+		printf("MENOR = %d\nMAIOR = %d\n", menor_elemento, maior_elemento);
+	} else
+		printf("ENTRADA INVALIDA\n"); 
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+	return(0);
 }
