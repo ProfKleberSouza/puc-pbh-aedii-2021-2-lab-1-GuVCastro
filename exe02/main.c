@@ -9,9 +9,9 @@ int main() {
 	if (n > 0) { 
 		vetor_preenche(n, vetor);
 		menor_elemento = vetor_exibe_menor(n, vetor); 
-		printf("MENOR = %d", menor_elemento);
+		printf("MENOR = %d\n", menor_elemento);
 	} else
-		printf("ENTRADA INVALIDA"); 
+		printf("ENTRADA INVALIDA\n"); 
 
 	return(0);
 }
