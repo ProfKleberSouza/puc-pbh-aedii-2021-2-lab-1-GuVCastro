@@ -5,9 +5,7 @@ int main() {
 
 	int vetor[50], n, menor_elemento;
 
-	printf("Insira a quantidade de elementos do vetor");
-	scanf("%d", &n);
-	
+	scanf("%d", &n);	
 	if (n > 0) { 
 		vetor_preenche(n, vetor);
 		menor_elemento = vetor_exibe_menor(n, vetor); 

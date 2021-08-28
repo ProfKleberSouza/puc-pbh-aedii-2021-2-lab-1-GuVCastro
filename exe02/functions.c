@@ -8,13 +8,12 @@ void vetor_preenche(int n, int vetor[n])
 		scanf("%d", &vetor[i]); 
 }
 
-int vetor_exibe_menor(int n, int vetor[n])
-{
-	int menor_elemento = vetor[0];
+int vetor_exibe_menor(int n, int vetor[n]){
+    int menor = vetor[0];
+    
+	for(i = 0; i < n; i++)
+        if(vetor[i] < menor)
+            menor = vetor[i];
 
-	for (int i = 0; i < n; i++)
-		if (menor_elemento < vetor[i])
-			menor_elemento = vetor[i]; 
-	
-	return menor_elemento;
-} 
+    return menor;
+}
